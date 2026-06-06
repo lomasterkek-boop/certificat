@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaLab | Студия профессионального видеопроизводства</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .video-overlay { background: rgba(0,0,0,0.4); }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <span class="text-2xl font-bold tracking-tighter uppercase text-slate-800">Cinema<span class="text-red-600">Lab</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest text-slate-600">
+                <a href="#services" class="hover:text-red-600 transition">Услуги</a>
+                <a href="#portfolio" class="hover:text-red-600 transition">Шоурил</a>
+                <a href="#cloud" class="text-red-600 border-b-2 border-red-600">Облако проектов</a>
+            </div>
+            <button class="bg-slate-900 text-white px-5 py-2 rounded text-sm font-bold hover:bg-red-600 transition uppercase">Вход для клиентов</button>
+        </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center justify-center overflow-hidden hero-gradient">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 uppercase tracking-tighter">Создаем видео, которые <br><span class="text-red-500 text-shadow">меняют правила игры</span></h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-lg mb-8 leading-relaxed">Производство контента в 4K и 8K. От рекламных роликов до документальных фильмов. Весь цикл: от сценария до постпродакшена и цветокоррекции.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-red-600 text-white px-10 py-4 rounded font-bold uppercase tracking-widest hover:scale-105 transition">Смотреть портфолио</button>
+                <button class="border-2 border-white/30 text-white px-10 py-4 rounded font-bold uppercase tracking-widest hover:bg-white/10 transition">Стать партнером</button>
+            </div>
+        </div>
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+    </header>
+
+    <section id="cloud" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 italic uppercase">Удаленный монтаж и <span class="text-red-600">Proxy-серверы</span></h2>
+                    <p class="text-slate-600 mb-6 text-lg leading-relaxed">Наша студия использует передовые технологии **Collaborative Workflow**. Мы работаем с исходными данными (Footage) напрямую через наше высокоскоростное облачное хранилище.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3 text-slate-700">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Синхронизация проектов в реальном времени (Adobe Premiere & DaVinci Resolve).</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-slate-700">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Выгрузка сырого материала в формате Apple ProRes 422 напрямую со съемочной площадки.</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-slate-700">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Средний объем обмена данными в сутки — до **450 ГБ** на одну рабочую станцию.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <div class="bg-slate-900 p-8 rounded-2xl shadow-2xl border border-slate-700">
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-3 h-3 bg-red-500 rounded-full mr-2 animate-pulse"></span>
+                            Статус сетевого рендеринга
+                        </h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between text-xs text-slate-400 mb-1 uppercase">Загрузка мастер-файла (Project_Final_v2.mov)</div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-red-600 h-full w-[84%]"></div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-800/50 p-4 rounded-lg">
+                                    <div class="text-slate-500 text-[10px] uppercase">Скорость передачи</div>
+                                    <div class="text-white text-xl font-mono tracking-tighter">842.1 Mbps</div>
+                                </div>
+                                <div class="bg-slate-800/50 p-4 rounded-lg">
+                                    <div class="text-slate-500 text-[10px] uppercase">Активных узлов</div>
+                                    <div class="text-white text-xl font-mono tracking-tighter">12/16</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-12 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-sm">
+            <div class="font-bold text-white tracking-widest uppercase">CinemaLab 2026</div>
+            <div class="flex space-x-8">
+                <a href="#" class="hover:text-white transition">Политика безопасности</a>
+                <a href="#" class="hover:text-white transition">Доступ к хранилищу</a>
+                <a href="#" class="hover:text-white transition">Техподдержка</a>
+            </div>
+            <div>Москва, ул. Электрозаводская, 21 • +7 (495) 000-00-00</div>
+        </div>
+    </footer>
+
+</body>
+</html>
